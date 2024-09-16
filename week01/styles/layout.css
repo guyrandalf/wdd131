@@ -56,12 +56,12 @@ header {
   color: white;
 }
 
-.navigation {
+nav {
   padding: 10px;
   background-color: #000000;
 }
 
-.navigation ul {
+nav ul {
   align-items: center;
   list-style: none;
   display: flex;
@@ -69,7 +69,8 @@ header {
   font-size: 18px;
 }
 
-.navigation li {
+nav li > a {
+    text-decoration: none;
   color: #ffffff;
 }
 
