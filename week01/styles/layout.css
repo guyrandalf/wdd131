@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+header {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+.header-content {
+  padding: 10px;
+  flex-grow: 1;
+  font-size: 22px;
+  color: white;
+}
+
+.navigation {
+  padding: 10px;
+  background-color: #000000;
+}
+
+.navigation ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.navigation li {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 250px;
+  font-size: 18px;
+}
+
+.main-content {
+  padding: 10px;
+  background-color: grey;
+}
+
+.aside-content {
+  padding: 10px;
+}
+
+.footer-content {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  height: 200px;
+}
