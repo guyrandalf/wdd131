@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+header {
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+.header-content {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  min-height: 70%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content p {
+  font-size: 22px;
+}
+
+nav {
+  padding: 10px;
+  background-color: #000000;
+  min-height: 30%;
+}
+
+nav ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+nav li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: pink;
+  font-size: 16px;
+}
+
+.active {
+  color: yellow;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100vh;
+  font-size: 18px;
+  margin: 20px;
+  gap: 10px;
+}
+
+.grid-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+}
+
+.heading {
+  margin: 0 auto;
+  padding: 10px;
+  min-height: 10%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslateblue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.heading h2 {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+.content {
+  padding: 10px;
+  min-height: 90%;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.modification {
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info p {
+  width: 600px;
+}
+
+.info img {
+  height: 300px;
+  width: 300px;
+}
