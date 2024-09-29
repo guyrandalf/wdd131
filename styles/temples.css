@@ -15,10 +15,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
-    background-color: #4a006e;
+    background-color: darkslateblue;
     color: white;
     padding: 30px 10px;
     display: flex;
@@ -49,7 +51,7 @@ nav ul {
     top: 100px;
     left: 0;
     width: 100%;
-    background-color: #4a006e;
+    background-color: darkslateblue;
     z-index: 998;
     transition: all 0.3s ease;
     border-top: 1px solid #fff;
@@ -110,7 +112,7 @@ figcaption {
 }
 
 footer {
-    background-color: #4a006e;
+    background-color: darkslateblue;
     color: white;
     text-align: center;
     padding: 10px 0;

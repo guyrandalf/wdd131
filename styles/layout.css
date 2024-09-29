@@ -43,7 +43,7 @@ h6 {
 }
 
 header {
-  background-color: #1a1a1a;
+  background-color: darkslateblue;
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -58,7 +58,7 @@ header {
 
 nav {
   padding: 10px;
-  background-color: #000000;
+  background-color: darkslateblue;
 }
 
 nav ul {
@@ -93,7 +93,7 @@ nav li > a {
 .footer-content {
   padding: 10px;
   font-size: 18px;
-  background-color: #1a1a1a;
+  background-color: darkslateblue;
   color: #ffffff;
   height: 200px;
 }
