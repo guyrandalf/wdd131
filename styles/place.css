@@ -80,9 +80,20 @@ footer {
         bottom: 100px;
         right: 30px;
     }
-    
-    .min-flex {
-        display: flex;
-        justify-content: space-between;
+
+    .icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: '🌞';
+        font-size: 1.5rem;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .weather h2::after {
+        content: none;
     }
 }
