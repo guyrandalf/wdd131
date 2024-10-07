@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1025px)" srcset="images/vehicles-5871002_1280.webp">
+                <source media="(max-width: 1024px)" srcset="images/vehicles-5871002_1280.webp">
+                <img src="images/vehicles-5871002_1280.webp" alt="Lemurs in Madagascar">
+            </picture>
+        </section>
+
+        <section class="overlay data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 923,769 sq km</p>
+            <p><strong>Population:</strong> 206,139,589</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+
+        <section class="overlay weather">
+            <div class="min-flex">
+                <h2>Weather</h2>
+                <div class="icon">⛅</div>
+            </div>
+            <p><strong>Temperature:</strong> 30 °C</p>
+            <p><strong>Conditions:</strong> Mostly Sunny</p>
+            <p><strong>Wind:</strong> 15 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy;<span id="currentYear"></span> Osabuohien Randalf Ehigiator</p>
+            <p class="modification" id="lastModified">Last Modification:</p>
+        </div>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
