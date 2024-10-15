@@ -1,0 +1,32 @@
+@media (min-width: 1025px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;
+    }
+
+    main h2 {
+        grid-column: span 3;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 0;
+        border: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+
+
+}
