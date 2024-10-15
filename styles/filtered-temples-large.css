@@ -27,9 +27,4 @@
     nav ul li a {
         padding: 10px 20px;
     }
-
-    .temple-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
