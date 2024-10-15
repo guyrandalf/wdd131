@@ -5,7 +5,7 @@
     }
 
     main .temple-container {
-
+        flex-direction: row;
     }
 
     main h2 {
