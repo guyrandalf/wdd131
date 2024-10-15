@@ -104,11 +104,22 @@ main figure img {
     height: 300px;
 }
 
-figcaption {
-    margin: 0;
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 5px;
-    font-size: 16px;
+}
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.temple-container {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
