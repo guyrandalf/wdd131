@@ -4,6 +4,10 @@
         padding: 40px;
     }
 
+    main .temple-container {
+
+    }
+
     main h2 {
         grid-column: span 3;
     }
