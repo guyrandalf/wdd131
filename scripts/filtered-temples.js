@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ];
 
-    const templeContainer = document.getElementById("templeContainer");
+    const templeContainer = document.getElementById("temples");
 
     const displayTemples = (templesArray) => {
         templeContainer.innerHTML = "";
