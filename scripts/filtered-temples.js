@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedSpan = document.getElementById('lastModified');
     lastModifiedSpan.textContent = document.lastModified;
 
+    const extractYear = (dateString) => {
+        return dateString.split(",")[0].trim();
+    };
+
     const temples = [
         {
             templeName: "Aba Nigeria",
@@ -135,14 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const filterByOldTemples = () => {
         const filteredTemples = temples.filter(
-            (temple) => new Date(temple.dedicated).getFullYear() < 1900
+            (temple) => extractYear(temple.dedicated) < 1900
         );
         displayTemples(filteredTemples);
     };
 
     const filterByNewTemples = () => {
         const filteredTemples = temples.filter(
-            (temple) => new Date(temple.dedicated).getFullYear() > 2000
+            (temple) => extractYear(temple.dedicated) > 2000
         );
         displayTemples(filteredTemples);
     };
