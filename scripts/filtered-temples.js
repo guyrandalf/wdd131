@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedSpan = document.getElementById('lastModified');
     lastModifiedSpan.textContent = document.lastModified;
 
-    const extractYear = (dateString) => {
-        const year = dateString.split(",")[0].trim();
-        return parseInt(year);
-    };
+    const extractYear = (dateString) => parseInt(dateString.split(",")[0].trim());
 
     const temples = [
         {
@@ -138,19 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     };
 
-    const filterByOldTemples = () => {
-        const filteredTemples = temples.filter(
-            (temple) => extractYear(temple.dedicated) < 1900
-        );
-        displayTemples(filteredTemples);
-    };
-
-    const filterByNewTemples = () => {
-        const filteredTemples = temples.filter(
-            (temple) => extractYear(temple.dedicated) > 2000
-        );
-        displayTemples(filteredTemples);
-    };
+    const filterByOldTemples = () => displayTemples(temples.filter((temple) => extractYear(temple.dedicated) < 1900));
+    const filterByNewTemples = () => displayTemples(temples.filter((temple) => extractYear(temple.dedicated) > 2000));
 
     const filterByLargeTemples = () => {
         const filteredTemples = temples.filter((temple) => temple.area > 90000);
