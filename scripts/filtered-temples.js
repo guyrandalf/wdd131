@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     lastModifiedSpan.textContent = document.lastModified;
 
     const extractYear = (dateString) => {
-        return dateString.split(",")[0].trim();
+        const year = dateString.split(",")[0].trim();
+        return parseInt(year);
     };
 
     const temples = [
