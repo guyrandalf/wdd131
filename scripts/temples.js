@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    const lastModifiedSpan = document.getElementById('last-modified');
+    const lastModifiedSpan = document.getElementById('lastModified');
     lastModifiedSpan.textContent = document.lastModified;
   });
