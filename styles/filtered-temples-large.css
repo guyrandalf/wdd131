@@ -1,5 +1,5 @@
 @media (min-width: 1025px) {
-    main {
+    .temples {
         grid-template-columns: repeat(3, 1fr);
         padding: 40px;
     }
