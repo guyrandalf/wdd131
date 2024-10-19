@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="WDD 131 - Dynamic Web Fundamentals, Osabuohien Randalf Ehigiator, homepage for my coursework this semester">
+    <meta name="author" content="Osabuohien Randalf Ehigiator">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Osabuohien Randalf Ehigiator
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+<header>
+    <h1>Product Review Form</h1>
+</header>
+<form action="review.html" method="get">
+    <label for="productName">Product Name</label>
+    <select id="productName" name="productName" required>
+        <option disabled selected value="">Select a Product ...</option>
+    </select>
+
+    <label>Overall Rating</label>
+    <div class="rating">
+        <div class="star-container">
+            <label for="rating1">☆</label>
+            <input id="rating1" name="rating" required type="radio" value="1"/>
+        </div>
+        <div class="star-container">
+            <label for="rating2">☆☆</label>
+            <input id="rating2" name="rating" type="radio" value="2"/>
+        </div>
+        <div class="star-container">
+            <label for="rating3">☆☆☆</label>
+            <input id="rating3" name="rating" type="radio" value="3"/>
+        </div>
+        <div class="star-container">
+            <label for="rating4">☆☆☆☆</label>
+            <input id="rating4" name="rating" type="radio" value="4"/>
+        </div>
+        <div class="star-container">
+            <label for="rating5">☆☆☆☆☆</label>
+            <input id="rating5" name="rating" type="radio" value="5"/>
+        </div>
+    </div>
+
+    <label for="installationDate">Date of Installation</label>
+    <input
+            id="installationDate"
+            name="installationDate"
+            required
+            type="date"
+    />
+
+    <fieldset>
+        <legend>Useful Features</legend>
+        <input id="feature1" name="feature" type="checkbox" value="Feature 1"/>
+        <label for="feature1">Feature 1</label>
+        <input id="feature2" name="feature" type="checkbox" value="Feature 2"/>
+        <label for="feature2">Feature 2</label>
+        <input id="feature3" name="feature" type="checkbox" value="Feature 3"/>
+        <label for="feature3">Feature 3</label>
+        <input id="feature4" name="feature" type="checkbox" value="Feature 4"/>
+        <label for="feature4">Feature 4</label>
+    </fieldset>
+
+    <label for="writtenReview">Written Review</label>
+    <textarea id="writtenReview" name="writtenReview"></textarea>
+
+    <label for="userName">User Name</label>
+    <input id="userName" name="userName" type="text"/>
+
+    <input type="submit" value="submit"/>
+</form>
+<footer>
+    <div class="footer-content">
+        <p class="copyright">&copy;<span id="currentYear"></span> Osabuohien Randalf Ehigiator</p>
+        <p class="modification" id="lastModified">Last Modification:</p>
+    </div>
+</footer>
+<script defer src="scripts/form.js"></script>
+<script src="scripts/getdates.js" defer></script>
+<script src="scripts/temples.js" defer></script>
+</body>
+</html>
