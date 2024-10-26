@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="WDD 131 - Dynamic Web Fundamentals, Osabuohien Randalf Ehigiator, homepage for my coursework this semester">
-    <meta name="author" content="Osabuohien Randalf Ehigiator">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="WDD 131 - Dynamic Web Fundamentals, Osabuohien Randalf Ehigiator, homepage for my coursework this semester"
+          name="description">
+    <meta content="Osabuohien Randalf Ehigiator" name="author">
     <title>
         WDD 131 - Dynamic Web Fundamentals - Osabuohien Randalf Ehigiator
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="styles/form.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -28,23 +28,23 @@
     <div class="rating">
         <div class="star-container">
             <label for="rating1">☆</label>
-            <input id="rating1" name="rating" required type="radio" value="1"/>
+            <input id="rating1" name="rating" required type="radio" value="1">
         </div>
         <div class="star-container">
             <label for="rating2">☆☆</label>
-            <input id="rating2" name="rating" type="radio" value="2"/>
+            <input id="rating2" name="rating" type="radio" value="2">
         </div>
         <div class="star-container">
             <label for="rating3">☆☆☆</label>
-            <input id="rating3" name="rating" type="radio" value="3"/>
+            <input id="rating3" name="rating" type="radio" value="3">
         </div>
         <div class="star-container">
             <label for="rating4">☆☆☆☆</label>
-            <input id="rating4" name="rating" type="radio" value="4"/>
+            <input id="rating4" name="rating" type="radio" value="4">
         </div>
         <div class="star-container">
             <label for="rating5">☆☆☆☆☆</label>
-            <input id="rating5" name="rating" type="radio" value="5"/>
+            <input id="rating5" name="rating" type="radio" value="5">
         </div>
     </div>
 
@@ -53,28 +53,31 @@
             id="installationDate"
             name="installationDate"
             required
-            type="date"
-    />
+            type="date">
 
     <fieldset>
         <legend>Useful Features</legend>
-        <input id="feature1" name="feature" type="checkbox" value="Feature 1"/>
-        <label for="feature1">Feature 1</label>
-        <input id="feature2" name="feature" type="checkbox" value="Feature 2"/>
-        <label for="feature2">Feature 2</label>
-        <input id="feature3" name="feature" type="checkbox" value="Feature 3"/>
-        <label for="feature3">Feature 3</label>
-        <input id="feature4" name="feature" type="checkbox" value="Feature 4"/>
-        <label for="feature4">Feature 4</label>
+        <label for="feature1">Durability
+            <input id="feature1" name="feature" type="checkbox" value="Durability">
+        </label>
+        <label for="feature2">Ease of Use
+            <input id="feature2" name="feature" type="checkbox" value="Ease of Use">
+        </label>
+        <label for="feature3">Performance
+            <input id="feature3" name="feature" type="checkbox" value="Performance">
+        </label>
+        <label for="feature4">Design
+            <input id="feature4" name="feature" type="checkbox" value="Design">
+        </label>
     </fieldset>
 
-    <label for="writtenReview">Written Review</label>
+    <label for="writtenReview">Written Review (Optional)</label>
     <textarea id="writtenReview" name="writtenReview"></textarea>
 
     <label for="userName">User Name</label>
-    <input id="userName" name="userName" type="text"/>
+    <input id="userName" name="userName" type="text">
 
-    <input type="submit" value="submit"/>
+    <input type="submit" value="submit">
 </form>
 <footer>
     <div class="footer-content">
@@ -83,7 +86,7 @@
     </div>
 </footer>
 <script defer src="scripts/form.js"></script>
-<script src="scripts/getdates.js" defer></script>
-<script src="scripts/temples.js" defer></script>
+<script defer src="scripts/getdates.js"></script>
+<script defer src="scripts/temples.js"></script>
 </body>
 </html>
