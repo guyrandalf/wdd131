@@ -42,32 +42,23 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-        <img src="images/young-athletic-man-working-out-listening-music-riverside-outdoors.jpg" alt="Welcome_to_wellness">
-    </section>
-
-    <section class="cta">
-        <p>Track your wellness activities and monitor your progress. Log your daily exercise, hydration, and sleep to stay on top of your health goals.</p>
-        <a href="log.html">Start Tracking now</a>
-    </section>
-
-    <section class="history">
-        <h2>My Recent Logs</h2>
-        <div class="log-container">
-            <table id="activityTable">
-                <thead>
-                    <tr>
-                        <th>Day/Time</th>
-                        <th>Activity</th>
-                        <th>Duration</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-        <a href="myprogress.html">View all</a>
+    <section class="form-container">
+        <h2>Log a new record</h2>
+        <form id="log-form">
+            <label for="dateTime">Day/Time:
+                <input type="datetime-local" id="dateTime" name="dateTime" required>
+            </label>
+        
+            <label for="activity">Activity:
+                <input type="text" id="activity" name="activity" required>
+            </label>
+        
+            <label for="duration">Duration (hours):
+                <input type="number" id="duration" name="duration" min="0" step="0.1" required>
+            </label>
+        
+            <button type="submit">Log Activity</button>
+        </form>
     </section>
   </main>
   <footer>
@@ -75,13 +66,13 @@
         <div class="logo-socials">
             <h3>Wellness Tracker</h3>
             <div class="socials">
-                <a href="https://web.facebook.com/randie.randalf" target="_blank">
+                <a href="#" target="_blank">
                     <img src="images/facebook.png" alt="facebook">
                 </a>
-                <a href="https://www.instagram.com/guy.randalf" target="_blank">
+                <a href="#" target="_blank">
                     <img src="images/instagram.png" alt="instagram">
                 </a>
-                <a href="https://x.com/randalfjs" target="_blank">
+                <a href="#" target="_blank">
                     <img src="images/twitter.png" alt="x">
                 </a>
             </div>
